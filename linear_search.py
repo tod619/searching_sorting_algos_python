@@ -19,3 +19,6 @@ nums = [1, 3, 6, 9, 10]
 
 print(linear_search(nums, 9))
 print(linear_search(nums, 11))
+
+# The time complexity of this algorithm is: 0(n)
+# As the size of the list increases the longer the algorithm takes to complete
