@@ -6,11 +6,11 @@
 # If the item is found return the index
 # If it is not found return -1
 
-def linear_search(list: list, search_item: int ) -> int:
+def linear_search(main_list: list, search_item: int ) -> int:
 
-    for item in list:
+    for item in main_list:
         if item == search_item:
-            return list.index(item)
+            return main_list.index(item)
         
     return -1
 
