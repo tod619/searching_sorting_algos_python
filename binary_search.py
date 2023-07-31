@@ -33,3 +33,22 @@ print(binary_search_iterative(list_1, 11))
 list_2 = [3, 5, 7, 8, 15, 55, 71, 80, 87, 90, 97]
 print(binary_search_iterative(list_2, 80))
 print(binary_search_iterative(list_2, 2))
+
+# Recursive implementation
+def binary_search_recursive(data:list, low:int, high:int, item:int) -> int:
+    if low <= high:
+        middle = (low + high) // 2
+        if data[middle] == item:
+            return middle
+        elif data[middle] > item:
+            return binary_search_recursive(data, low, middle - 1, item)
+        else:
+            return binary_search_recursive(data, middle + 1, high, item)
+    else:
+        return -1
+    
+
+data = [2, 4, 5, 7, 10, 15, 23]
+print(binary_search_recursive(data, 0, len(data), 7))
+print(binary_search_recursive(data, 0, len(data), 15))
+print(binary_search_recursive(data, 0, len(data), 20))
