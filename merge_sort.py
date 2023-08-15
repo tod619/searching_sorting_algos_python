@@ -34,3 +34,9 @@ def merge(left_half:list, right_half:list):
             break
 
     return result
+
+unsorted_list = [3, 1, 0, 9, 6, 11, 5]
+print(unsorted_list)
+
+sorted_list = merge_sort(unsorted_list)
+print(sorted_list)
