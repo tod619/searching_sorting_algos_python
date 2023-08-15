@@ -7,10 +7,10 @@ def merge_sort(lst:list):
     else:
         middle_index = len(lst) // 2
 
-    left = merge_sort(lst[:middle_index])
-    right = merge_sort(lst[middle_index:])
+        left = merge_sort(lst[:middle_index])
+        right = merge_sort(lst[middle_index:])
 
-    return merge(left, right)
+        return merge(left, right)
 
 def merge():
     pass
